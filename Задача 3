@@ -1,0 +1,16 @@
+# Добавление метода Добавьте в класс Car метод age(), который будет возвращать возраст автомобиля (текущий год минус год выпуска).
+
+class Car:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+    def info(self):
+        return f'Марка машины:{brand}\nМодель машины:{model}\nГод выпуска:{year}'
+
+
+my_old_car = Car('BMW', 'X6', 2018)
+my_new_car = Car('Haval', 'Pizdez', 2022)
+my_dream_car = Car('Lamborgini', 'Murselago', 2025)
+
+print(f'Моя старая машина:{my_old_car.info()}\nМоя новая машина:{my_new_car.info()}\nМоя машина мечты:{my_dream_car}')

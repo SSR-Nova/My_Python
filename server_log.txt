@@ -1,0 +1,3 @@
+2024-05-20 ERROR: Connection timeout  
+2024-05-20 INFO: User logged in  
+2024-05-21 ERROR: File not found  

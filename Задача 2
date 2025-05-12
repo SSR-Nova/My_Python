@@ -1,0 +1,15 @@
+class Car:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+
+    def info(self):
+        return f'Марка машины: {self.brand}\nМодель машины: {self.model}\nГод выпуска: {self.year}'
+
+
+my_old_car = Car('BMW', 'X6', 2019)
+my_new_car = Car('Haval', 'Pizdec', 2023)
+my_dream_car = Car('Lambargini', 'Murselago', 2025)
+
+print(f'Моя старая машина:\n{my_old_car.info()}\nМоя новая машина:\n{my_new_car.info()}\nМоя машина мечты:\n{my_dream_car.info()}')
