@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #Универсальный обработчик
 #Напишите функцию processor, которая:
 #Принимает обязательный аргумент operation (строка: "sum", "multiply", "concat").
@@ -14,21 +13,4 @@ def processor(operation, *args, **kwargs):
 
 
 print(processor("sum", 1, 2, 3)) 
-=======
-#Универсальный обработчик
-#Напишите функцию processor, которая:
-#Принимает обязательный аргумент operation (строка: "sum", "multiply", "concat").
-#Принимает *args для чисел (если операция "sum" или "multiply").
-#Принимает **kwargs для строк (если операция "concat").
-
-def processor(operation, *args, **kwargs):
-    if operation == 'sum':
-        return sum(args)
-    elif operation == 'concat':
-        return ''.join(str(value) for value in kwargs.values())
-
-
-
-print(processor("sum", 1, 2, 3)) 
->>>>>>> d6adf397ce76f5063ab9da53365e45c33c9cf186
 print(processor("concat", a="Hello", b=" "))
