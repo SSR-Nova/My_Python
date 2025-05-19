@@ -1,24 +1,18 @@
 #Рекусивный подсчёт элементов
-'''def count_occurrences(arr, target):
-    count = 0
-    if not arr:
-        return 0
-    
-    for i in arr:
-        if i == target:
-            count += 1
-    return count'''
 
-def count_occurrences(arr, target, start=None):
-    start = len(arr) - 1
-    count = 0
-    if not arr:
+
+def count_occurrences(arr, target, start=0):
+    #Проверка длины списка
+    if start >= len(arr):
         return 0
+    #Если значения совпадают +1 и продолжение рекурсии
     elif arr[start] == target:
-        count += 1
-        count_occurrences(arr, target, start - 1)
+        return 1 + count_occurrences(arr, target, start + 1)
+    # Если не совпадают 0+ продолжение рекурсии    
+    else:
+        return 0 + count_occurrences(arr, target, start + 1)
         
-    return count   
+      
     
 
 
